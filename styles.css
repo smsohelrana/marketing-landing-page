@@ -1,0 +1,176 @@
+/* ===== Basic Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  line-height: 1;
+  font-size: 18px;
+  background-color: #007bff;
+
+}
+
+/* ------ Header -------- */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 70px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+
+/* --------- Logo ------------*/
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #007bff;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+
+/* ----------Hero Section ----------- */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 100px;
+  background: #007bff;
+  color: #fff;
+  overflow: hidden;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 58px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero-content h1 span {
+  color: #fff;
+}
+
+.hero-content p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #e8e8e8;
+}
+
+/* --------- Button ------------*/
+
+.btn-start {
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #fff;
+  color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-start:hover {
+  background-color: #005ce6;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/*--------- Hero Image ----------- */
+.hero-image {
+  flex: 1;
+  text-align: right;
+  z-index: 2;
+}
+
+.hero-image img {
+  width: 85%;
+  max-width: 450px;
+  border-radius: 20px;
+  object-fit: contain;
+  position: relative;
+  z-index: 3;
+ 
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 80px;
+  margin-top: 50px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 16px;
+}
+
+.footer-bottom a {
+  color: #fffdfd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+  color: #82c7ff;
+}
+
+/* ===== Responsive Design ===== */
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+
+
+  .btn-start {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+
